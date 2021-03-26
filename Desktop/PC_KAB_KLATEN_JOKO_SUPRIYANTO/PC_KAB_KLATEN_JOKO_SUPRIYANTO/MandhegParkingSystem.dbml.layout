@@ -1,0 +1,104 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11.25, 9.25" name="MandhegParkingSystem">
+  <DataContextMoniker Name="/MandhegParkingSystemDataContext" />
+  <nestedChildShapes>
+    <classShape Id="e20a8f1f-e710-4df6-be4e-c090d3707639" absoluteBounds="6.25, 2.125, 2, 2.9247054036458326">
+      <DataClassMoniker Name="/MandhegParkingSystemDataContext/Employee" />
+      <nestedChildShapes>
+        <elementListCompartment Id="e9b8684b-02d8-49c3-a3e5-3d7ebed277b3" absoluteBounds="6.265, 2.585, 1.9700000000000002, 2.364705403645833" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="6d06173d-8af6-41c1-9ca2-92448c5dbec0" absoluteBounds="0.75, 0.75, 2, 1.7708968098958327">
+      <DataClassMoniker Name="/MandhegParkingSystemDataContext/VehicleType" />
+      <nestedChildShapes>
+        <elementListCompartment Id="acc30a12-a3b7-410b-8662-37fdb4c552e2" absoluteBounds="0.765, 1.21, 1.9700000000000002, 1.2108968098958333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="571779aa-2298-4a24-960c-7cb8f14a2324" absoluteBounds="3.5, 2.5, 2, 2.1554996744791666">
+      <DataClassMoniker Name="/MandhegParkingSystemDataContext/HourlyRate" />
+      <nestedChildShapes>
+        <elementListCompartment Id="54962055-5481-4b37-83f2-6f275a5b2285" absoluteBounds="3.515, 2.96, 1.9700000000000002, 1.5954996744791665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="8d9f64c7-62e7-4154-a564-116e5b719ebc" absoluteBounds="3.5, 6.125, 2, 2.9247054036458344">
+      <DataClassMoniker Name="/MandhegParkingSystemDataContext/Member" />
+      <nestedChildShapes>
+        <elementListCompartment Id="ad5e81bf-648e-41a9-b864-4b0d8bc663a2" absoluteBounds="3.515, 6.585, 1.9700000000000002, 2.364705403645833" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="1a4e8a2e-b044-4878-8b6f-4c99e05abacb" absoluteBounds="0.75, 3.75, 2, 1.7708968098958327">
+      <DataClassMoniker Name="/MandhegParkingSystemDataContext/Membership" />
+      <nestedChildShapes>
+        <elementListCompartment Id="8d5c4596-f605-4b74-84ab-4955a2a8b50f" absoluteBounds="0.765, 4.21, 1.9700000000000002, 1.2108968098958333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="e53c6d94-881f-4b9e-a89b-737271094cac" absoluteBounds="9, 4.125, 2, 2.9247054036458326">
+      <DataClassMoniker Name="/MandhegParkingSystemDataContext/ParkingData" />
+      <nestedChildShapes>
+        <elementListCompartment Id="61e88fce-b54f-4592-aad8-14519cc92a63" absoluteBounds="9.015, 4.585, 1.9700000000000002, 2.364705403645833" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="cf88f276-97a6-4283-b935-c5ae699631da" absoluteBounds="6.25, 6.375, 2, 2.3478011067708353">
+      <DataClassMoniker Name="/MandhegParkingSystemDataContext/Vehicle" />
+      <nestedChildShapes>
+        <elementListCompartment Id="10171f4d-81d8-4004-95ac-eff5dd6daf53" absoluteBounds="6.265, 6.835, 1.9700000000000002, 1.7878011067708335" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(2.75 : 1.6249995); (4.5 : 1.6249995); (4.5 : 2.5)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/MandhegParkingSystemDataContext/VehicleType/VehicleType_HourlyRate" />
+      <nodes>
+        <classShapeMoniker Id="6d06173d-8af6-41c1-9ca2-92448c5dbec0" />
+        <classShapeMoniker Id="571779aa-2298-4a24-960c-7cb8f14a2324" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.75 : 4.20274983723958); (3.5 : 4.20274983723958)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/MandhegParkingSystemDataContext/Membership/Membership_HourlyRate" />
+      <nodes>
+        <classShapeMoniker Id="1a4e8a2e-b044-4878-8b6f-4c99e05abacb" />
+        <classShapeMoniker Id="571779aa-2298-4a24-960c-7cb8f14a2324" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(1.75 : 5.52089680989583); (1.75 : 7.58735270182292); (3.5 : 7.58735270182292)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/MandhegParkingSystemDataContext/Membership/Membership_Member" />
+      <nodes>
+        <classShapeMoniker Id="1a4e8a2e-b044-4878-8b6f-4c99e05abacb" />
+        <classShapeMoniker Id="8d9f64c7-62e7-4154-a564-116e5b719ebc" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(8.25 : 4.58735270182292); (9 : 4.58735270182292)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/MandhegParkingSystemDataContext/Employee/Employee_ParkingData" />
+      <nodes>
+        <classShapeMoniker Id="e20a8f1f-e710-4df6-be4e-c090d3707639" />
+        <classShapeMoniker Id="e53c6d94-881f-4b9e-a89b-737271094cac" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(5.5 : 3.57774983723958); (5.875 : 3.57774983723958); (5.875 : 5.71235270182292); (5.91666666666667 : 5.71235270182292 : JumpStart); (6.08333333333333 : 5.71235270182292 : JumpEnd); (9 : 5.71235270182292)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/MandhegParkingSystemDataContext/HourlyRate/HourlyRate_ParkingData" />
+      <nodes>
+        <classShapeMoniker Id="571779aa-2298-4a24-960c-7cb8f14a2324" />
+        <classShapeMoniker Id="e53c6d94-881f-4b9e-a89b-737271094cac" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(8.25 : 6.71235270182292); (9 : 6.71235270182292)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/MandhegParkingSystemDataContext/Vehicle/Vehicle_ParkingData" />
+      <nodes>
+        <classShapeMoniker Id="cf88f276-97a6-4283-b935-c5ae699631da" />
+        <classShapeMoniker Id="e53c6d94-881f-4b9e-a89b-737271094cac" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(5.5 : 7.54890055338542); (6.25 : 7.54890055338542)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/MandhegParkingSystemDataContext/Member/Member_Vehicle" />
+      <nodes>
+        <classShapeMoniker Id="8d9f64c7-62e7-4154-a564-116e5b719ebc" />
+        <classShapeMoniker Id="cf88f276-97a6-4283-b935-c5ae699631da" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.75 : 1.15624775); (6 : 1.15624775); (6 : 6); (7.25 : 6); (7.25 : 6.375)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/MandhegParkingSystemDataContext/VehicleType/VehicleType_Vehicle" />
+      <nodes>
+        <classShapeMoniker Id="6d06173d-8af6-41c1-9ca2-92448c5dbec0" />
+        <classShapeMoniker Id="cf88f276-97a6-4283-b935-c5ae699631da" />
+      </nodes>
+    </associationConnector>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>
